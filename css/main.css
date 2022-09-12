@@ -1,0 +1,375 @@
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.main {
+    width: 100%;
+}
+/* Start Header  */
+.main header {
+    width: 100%;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: white;
+    background-size: contain;
+}
+.main header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.main header img {
+    margin-bottom: 50px;
+}
+.main header h1 {
+    font-size: 40px;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 15px;
+    text-align: center;
+}
+.main header p {
+    max-width: 650px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    line-height: 1.5;
+}
+.main header .button {
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+}
+.main header .button button {
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px 25px ;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+.main header .button button:first-child {
+    background-color: var(--Strong-Cyan);
+    box-shadow: hsla(171, 66%, 44%, 0.3)  0px 20px 25px -5px, hsla(171, 66%, 44%, 0.1) 0px 10px 10px -5px;
+}
+.main header .button button:last-child {
+    background-color: var(--Light-Blue);
+    box-shadow: hsl(233, 100%, 69%, 0.3)  0px 20px 25px -5px, hsl(233, 100%, 69%, 0.1) 0px 10px 10px -5px;
+}
+/* End Header */
+/* Start Track */
+.main .track .title .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    margin-bottom: 25px;
+}
+.main .track .title h2 {
+    font-size: 35px;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 15px;
+    text-align: center;
+}
+.main .track .title p {
+    max-width: 640px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    line-height: 1.6;
+}
+.main .track .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main .track .info .image {
+    flex-basis: 60%;
+    position: relative;
+    left: -2.5%;
+}
+.main .track .info .image img {
+    width: 100%;
+    min-width: 50%;
+}
+.main .track .info .text {
+    flex-basis: 30%;
+    width: 100%;
+}
+.main .track .info .text .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+.main .track .info .text h3 {
+    font-size: 24px;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.main .track .info .text p {
+    max-width: 440px;
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    line-height: 2;
+}
+.main .track .acc .container {
+    display: flex;
+    flex-direction: column;
+}
+.main .track .acc .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    height: 200px;
+}
+.main .track .acc .text h2 {
+    font-size: 35px;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 15px;    
+    text-align: center;
+}
+.main .track .acc .text p {
+    max-width: 600px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* End Track */
+/* Start Workflow */
+.main .workflow {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main .workflow .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.main .workflow .title h2{
+    font-size: 35px;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 15px; 
+    text-align: center;
+}
+.main .workflow .title p {
+    max-width: 600px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+.main .workflow .cards .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main .workflow .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .workflow .cards .card h3 {
+    font-size: 20px;
+    color: var(--Dark-Grayish-Blue);
+    margin-top: 15px;
+    margin-bottom: 15px; 
+}
+.main .workflow .cards .card p {
+    max-width: 600px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+    line-height: 1.6;
+}
+.main .workflow .imgs {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .workflow .imgs .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.main .workflow h2 {
+    font-size: 30px;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+.main .workflow p {
+    max-width: 650px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    line-height: 1.5;
+}
+.main .workflow .button {
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+}
+.main .workflow .button button {
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px 35px ;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.main .workflow .button button:first-child {
+    background-color: var(--Strong-Cyan);
+    box-shadow: hsla(171, 66%, 44%, 0.3)  0px 20px 25px -5px, hsla(171, 66%, 44%, 0.1) 0px 10px 10px -5px;
+}
+.main .workflow .button button:last-child {
+    background-color: var(--Light-Blue);
+    box-shadow: hsl(233, 100%, 69%, 0.3)  0px 20px 25px -5px, hsl(233, 100%, 69%, 0.1) 0px 10px 10px -5px;
+}
+.main header .button button:first-child:hover , .main .workflow .button button:first-child:hover{
+    background-color: hsl(171, 66%, 44%, 0.8);
+}
+.main header .button button:last-child:hover , .main .workflow .button button:last-child:hover {
+    background-color: hsl(233, 100%, 69%, 0.8);
+}
+/* End Workflow */
+/* Start Footer  */
+.main footer {
+    background-color: hsl(201, 11%, 66%,0.1);
+    width: 100%;
+    min-height: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.main footer .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 140px;
+    max-height: 100%;
+}
+.main footer img {
+    width: 50px;
+}
+.main footer .list {
+    display: flex;
+    gap: 170px;
+}
+.main footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 10px;
+}
+.main footer ul li {
+    transition: 0.3s;
+    cursor: pointer;
+}
+.main footer ul li:hover {
+    color: var(--Strong-Cyan);
+}
+.main footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.main footer .icons i {
+    font-size: 25px;
+    color: var(--Dark-Grayish-Blue);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.main footer .icons i:hover {
+    color: var(--Strong-Cyan);
+}
+/* End Footer  */
+
+@media (max-width: 700px) {
+    .main header .button button , .main .workflow .button button{
+        width: 160px;
+        padding: 10px 10px;
+    }
+    .main .track .info .image {
+        flex-basis: 100%;
+        left: 0;
+        text-align: center;
+    }
+    .main .track .info .image img {
+        width: 80%;
+        margin: 50px auto;
+        left: 0;
+    }
+    .main .track .info .text {
+        flex-basis: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .main footer .list {
+        display: block;
+    }
+    .main footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        color: var(--Dark-Grayish-Blue);
+        margin-bottom: 10px;
+    }
+    .main footer .container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        max-height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
